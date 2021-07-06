@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Score Keeper</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="title">Ping Pong Score Keeper</h1>
+    <h2 class="scores">
+      <span class="score-player-one">0</span> -
+      <span class="score-player-two">0</span>
+    </h2>
+    <p>Use the buttons below to keep score</p>
+    <h2 class="max-score-selector">Playing To</h2>
+    <input
+      type="number"
+      name="max-score"
+      id="max-score"
+      min="1"
+      value="1"
+      placeholder="Choose max Score"
+    />
+    <button class="increase-player-one">+1 Player One</button>
+    <button class="increase-player-two">+1 Player Two</button>
+    <button class="reset">Reset</button>
+    <script src="app.js"></script>
+  </body>
 </html>
