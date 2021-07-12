@@ -53,10 +53,8 @@ const reset = () => {
   maxScoreElement.value = 1;
   increasePlayerOneScore.disabled = false;
   increasePlayerTwoScore.disabled = false;
-  scorePlayerOneElement.classList.remove("winner");
-  scorePlayerOneElement.classList.remove("loser");
-  scorePlayerTwoElement.classList.remove("loser");
-  scorePlayerTwoElement.classList.remove("winner");
+  scorePlayerOneElement.classList.remove("winner", "loser");
+  scorePlayerTwoElement.classList.remove("winner", "loser");
 
   scorePlayerOneElement.textContent = scorePlayerOne;
   scorePlayerTwoElement.textContent = scorePlayerTwo;
